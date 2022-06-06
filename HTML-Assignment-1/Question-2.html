@@ -1,63 +1,66 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Assignment Question 2</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        table
-        {
-            width: auto;
-            height: 40vh;
-            border-collapse: collapse;
+        img{
+            height: 100px;
+            width: 100px;
         }
-        #logoCell
-        {
-            border: 2px solid aqua; 
+        .imageDiv{
+            border: 2px solid aqua;
         }
-        #menuCell{
-            border: 2px solid red;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            height: 60vh;
         }
-        #formCell
-        {
-            border: 2px solid purple;
-            width: 30vw;
+        .formDiv{
             text-align: center;
+            border: 2px solid purple;
+            width: 80%;
         }
-        #footerCell
-        {
-            border: 2px solid yellow;
-        }
-        #emptyCell
-        {
+        .navDiv{
             border: 2px solid red;
-            height: 10vh;
+            width: 20%;
+        }
+        li{
+            list-style-type:none;
+        }
+        .footerDiv{
+            border: 2px solid yellow;
+            height: 20vh;
         }
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td id="logoCell" colspan="2">Logo</td>
-        </tr>
 
-        <tr>
-            <td id="menuCell">Menu 1</td>
-            <td id="formCell" rowspan="4">Form</td>
-        </tr>
+    <div class="imageDiv">
+        <img src="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg" height="150px" width="400px">
+    </div>
 
-        <tr>
-            <td id="menuCell">Menu 2</td>
-        </tr>
+    <div class="container">
+        <div class="navDiv">
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+            </ul>
+        </div>
+        <div class="formDiv">
+            <h3>
+                Form
+            </h3>
+        </div>
+    </div>
 
-        <tr>
-            <td id="menuCell">Menu 3</td>
-        </tr>
-
-        <tr>
-            <td id="emptyCell"></td>
-        </tr>
-        <tr>
-            <td id="footerCell" colspan="2">Footer</td>
-        </tr>
-    </table>
+    <div class="footerDiv">
+        <footer>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odit quasi voluptatum quibusdam quia maxime iusto ullam autem fuga eligendi nobis architecto incidunt, consequatur placeat, officia temporibus cumque? Corrupti, impedit.
+        </footer>
+    </div>
 </body>
 </html>
