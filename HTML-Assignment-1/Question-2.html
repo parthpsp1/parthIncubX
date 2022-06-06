@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>Assignment Question 2</title>
+
+    <style>
+        table
+        {
+            width: auto;
+            height: 40vh;
+            border-collapse: collapse;
+        }
+        #logoCell
+        {
+            border: 2px solid aqua; 
+        }
+        #menuCell{
+            border: 2px solid red;
+        }
+        #formCell
+        {
+            border: 2px solid purple;
+            width: 30vw;
+            text-align: center;
+        }
+        #footerCell
+        {
+            border: 2px solid yellow;
+        }
+        #emptyCell
+        {
+            border: 2px solid red;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="logoCell" colspan="2">Logo</td>
+        </tr>
+
+        <tr>
+            <td id="menuCell">Menu 1</td>
+            <td id="formCell" rowspan="4">Form</td>
+        </tr>
+
+        <tr>
+            <td id="menuCell">Menu 2</td>
+        </tr>
+
+        <tr>
+            <td id="menuCell">Menu 3</td>
+        </tr>
+
+        <tr>
+            <td id="emptyCell"></td>
+        </tr>
+        <tr>
+            <td id="footerCell" colspan="2">Footer</td>
+        </tr>
+    </table>
+</body>
+</html>
