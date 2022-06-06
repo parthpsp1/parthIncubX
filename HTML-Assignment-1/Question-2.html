@@ -16,7 +16,7 @@
         .container{
             display: flex;
             justify-content: space-between;
-            height: 60vh;
+            height: 70vh;
         }
         .formDiv{
             text-align: center;
@@ -39,20 +39,72 @@
 <body>
 
     <div class="imageDiv">
-        <img src="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg" height="150px" width="400px">
+        <img src="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg">
     </div>
 
     <div class="container">
         <div class="navDiv">
             <ul>
-                <li>Menu 1</li>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
             </ul>
         </div>
         <div class="formDiv">
             <h3>
-                Form
+                <form>
+                    <label>Username:</label>
+                    <input type="text" placeholder="Enter Username" />
+        
+                    <br /><br />
+        
+                    <label>Password:</label>
+                    <input type="password" placeholder="Enter Password" />
+        
+                    <br /><br />
+        
+                    <label>Email:</label>
+                    <input type="email" placeholder="Enter Email" />
+        
+                    <br /><br />
+        
+                    <label>Choice:</label>
+                    <input type="radio" value="One" name="One" />One
+                    <input type="radio" value="Two" name="One" />Two
+                    <input type="radio" value="Three" name="One" />Three
+        
+                    <br /><br />
+        
+                    <label> Choice 2:</label>
+                    <input type="checkbox" value="One" name="One" />One
+                    <input type="checkbox" value="Two" name="Two" />Two
+                    <input type="checkbox" value="Three" name="Three" />Three
+        
+                    <br /><br />
+        
+                    <label>Select Choice:</label>
+                    <select name="slection" id="selectionChoice">
+                      <option value="Choice 1">Choice 1</option>
+                      <option value="Choice 2">Choice 2</option>
+                      <option value="Choice 3">Choice 3</option>
+                      <option value="Choice 4">Choice 4</option>
+                    </select>
+        
+                    <br /><br />
+        
+                    <label>Text Area:</label><br />
+                    <textarea
+                      name="textarea"
+                      id="textArea"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+        
+                    <br /><br />
+        
+                    <button type="reset" value="Reset">Reset</button>
+                    <button type="submit" value="Submit">Submit</button>
+                </form>
             </h3>
         </div>
     </div>
