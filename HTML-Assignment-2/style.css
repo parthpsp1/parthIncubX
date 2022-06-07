@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS For Whole Body Ends Here*/
+
+#topDiv {
+    border: 1px solid blue;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#websiteLogo {
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+}
+
+#user-profileSection {
+    display: flex;
+    align-items: center;
+}
+
+#profileImage {
+    height: inherit;
+    width: inherit;
+    left: 0;
+}
+
+/*CSS For Top Div Ends Here*/
+
+.container {
+    border: 2px solid blue;
+    height: 90vh;
+    display: flex;
+}
+
+.sidebar {
+    float: left;
+    border: 2px solid red;
+    height: inherit;
+    width: 20vw;
+}
+
+.content {
+    width: 80vw;
+    height: 90vh;
+}
+
+#headerDiv {
+    margin: 0;
+    border: 2px solid green;
+    width: inherit;
+    height: 10vh;
+    text-align: center;
+}
+
+#blogContent {
+    display: flex;
+    padding: 20px;
+    border: 2px solid purple;
+
+}
+
+#blogImageDiv {
+    height: 250px;
+    width: 250px;
+    border: 2px solid orange;
+}
+
+#blogImage {
+    height: inherit;
+    width: inherit;
+}
+
+#blogText {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+#contactPageDiv {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    font-family: monospace;
+    border: 2px solid red;
+
+}
+
+#usernameText {
+    font-family: monospace;
+    font-size: 18px;
+    border: 2px solid yellow;
+}
+
+#headerText {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#blogHeader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid purple;
+
+}
+
+#blogParagraph {
+    margin-top: 10px;
+    border: 2px solid purple;
+}
+
+#logoDiv {
+    border: 2px solid red;
+}
+
+#profileImageDiv {
+    border: 2px solid yellow;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+}
+
+#contactButton {
+    font-family: monospace;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
