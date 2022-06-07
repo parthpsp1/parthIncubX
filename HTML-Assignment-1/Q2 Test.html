@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*  img{
+            height: 100px;
+            width: 100px;
+        }
+        .imageDiv{
+            border: 2px solid aqua;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            height: 70vh;
+        }
+        .formDiv{
+            text-align: center;
+            border: 2px solid purple;
+            width: 80%;
+        }
+        .navDiv{
+            border: 2px solid red;
+            width: 20%;
+        }
+        li{
+            list-style-type:none;
+        }
+        .footerDiv{
+            border: 2px solid yellow;
+            height: 20vh;
+        }*/
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px,auto);
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+<!--
+    <div class="imageDiv">
+        <img src="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg">
+    </div>
+
+    <div class="container">
+        <div class="navDiv">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </div>
+        <div class="formDiv">
+            <h3>
+            </h3>
+        </div>
+    </div>
+
+    <div class="footerDiv">
+        <footer>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odit quasi voluptatum quibusdam quia maxime iusto ullam autem fuga eligendi nobis architecto incidunt, consequatur placeat, officia temporibus cumque? Corrupti, impedit.
+        </footer>
+    </div>
+    -->
+
+    <div class="wrapper">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, obcaecati ex. Totam ab cumque aspernatur soluta beatae iste. Culpa, expedita! Veniam sit aliquam laborum a sequi voluptatibus ipsum ratione officia exercitationem necessitatibus incidunt repellat eum excepturi expedita consectetur minima aspernatur minus non quam provident, tempora consequatur. Qui tempora pariatur error, minima natus eius sint consequuntur alias dicta omnis fugiat officiis.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nesciunt libero soluta adipisci ipsum velit inventore vero nulla exercitationem commodi atque quibusdam facere assumenda quidem reiciendis iusto magnam, vel saepe corrupti officiis quod ratione provident beatae! Corporis distinctio beatae nam qui optio laboriosam quaerat, officiis vero, ex aperiam fugiat voluptatum?
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias incidunt neque esse iure ab! Iste dolorum, laborum ratione corporis officia nam consectetur. Deserunt expedita ipsam debitis repellat possimus, quasi amet rem eveniet temporibus, vitae harum enim aspernatur quisquam ad voluptas vel! Inventore expedita, recusandae dicta illum voluptatum nemo cum suscipit.
+        </div>
+        <div></div>
+    </div>
+
+</body>
+</html>
