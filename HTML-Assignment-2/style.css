@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /*CSS For Whole Body Ends Here*/
 
 #topDiv {
@@ -23,7 +28,6 @@
 #user-profileSection {
     display: flex;
     align-items: center;
-    overflow: -moz-hidden-unscrollable;
 }
 
 #profileImage {
@@ -125,5 +129,5 @@ a {
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: grey;
 }
