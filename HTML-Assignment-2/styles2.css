@@ -1,0 +1,150 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#navSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+}
+
+div img {
+    height: 80px;
+    width: 80px;
+}
+
+#headerDiv {
+    text-align: center;
+}
+
+#cardDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.cardImageDiv {
+    height: 100px;
+    width: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+.cardImage {
+    height: 100px;
+    width: 100px;
+}
+
+.cardContent {
+    margin: 20px;
+}
+
+.cardTitle {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#navButton {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#navDiv {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin: 20px;
+}
+
+.topicTitle {
+    padding: 20px;
+}
+
+#imageDiv {
+    position: relative;
+    text-align: center;
+}
+
+#heroImage {
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    opacity: 40%;
+}
+
+#overImageTitle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+#overimageText {
+    position: absolute;
+    top: 20%;
+    text-align: left;
+    margin: 20px;
+    font-size: 16px;
+    width: 30vw;
+    text-align: justify;
+}
+
+#footerDiv {
+    display: flex;
+    height: 20vh;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+#footerLogo {
+    height: 150px;
+    width: 150px;
+}
+
+#footerSocialLinks {
+    list-style-type: none;
+}
+
+.floatRight {
+    float: right;
+}
+
+button {
+    font-family: monospace;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    padding: 12px;
+}
+
+.socialMediaIcons {
+    float: right;
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+}
