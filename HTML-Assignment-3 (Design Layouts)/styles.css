@@ -156,33 +156,30 @@ a {
 
 .statustext {
     margin: 20px;
-    padding: 14px;
+    padding: 10px;
     border-bottom: 2px solid black;
-    border-radius: 8px;
+    border-radius: 6px;
+    font-size: 1rem;
 }
 
 .statustext-selected {
     margin: 20px;
-    padding: 14px;
-    background: linear-gradient(to right, aqua, purple);
+    padding: 10px;
+    background: linear-gradient(to right, aqua, rgb(196, 118, 196));
     border-radius: 20px;
     color: white;
+    font-size: 1rem;
+    box-shadow: 1px 1px 6px black;
 }
 
 .filters {
-    margin: 20px;
+    margin-left: 20px;
 }
 
 .filter-button-list {
     display: flex;
     text-align: center;
     align-items: center;
-}
-
-.filter-button-dropdown-icon {
-    height: 16px;
-    width: auto;
-    margin: 2px;
 }
 
 .filterbutton {
@@ -385,4 +382,14 @@ a {
     font-weight: bold;
     color: white;
     cursor: pointer;
+}
+
+.iframe-icon {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.fa {
+    margin: 4px;
 }
