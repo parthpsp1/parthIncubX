@@ -14,7 +14,7 @@ a {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: auto;
 }
 
@@ -30,11 +30,23 @@ a {
 }
 
 .powered-by-content {
-    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+}
+
+.powered-by-image-div {
+    display: flex;
+    justify-content: center;
+}
+
+.powered-by-text {
+    font-size: 0.9rem;
+    color: #303030;
 }
 
 .powered-by-image {
-    height: 40px;
+    margin-top: -20px;
+    height: 80px;
     width: auto;
 }
 
@@ -42,6 +54,7 @@ a {
     height: 250px;
     width: auto;
 }
+
 
 .content {
     height: auto;
@@ -56,32 +69,96 @@ a {
 }
 
 .form-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin: 60px;
-    border: 2px solid black;
+    box-shadow: 1px 4px 10px black;
+    background: linear-gradient(to right, rgb(237, 165, 32), rgb(74, 214, 226));
 }
 
 .formdiv {
     display: flex;
     flex-direction: column;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    border: 2px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
     justify-content: center;
 }
 
-.input {
-    width: 90%;
-    margin-top: 6px;
-    height: 12px;
-    padding: 10px;
-}
-
 .website-title {
+    color: white;
+    text-shadow: 3px 2px 10px black;
     text-align: center;
     margin: 0;
 }
 
 .website-subtitle {
+    color: white;
+    text-shadow: 1px 1px 4px black;
     font-size: 1rem;
     text-align: center;
+}
+
+.label {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.input-text {
+    width: 90%;
+    margin-top: 6px;
+    height: 12px;
+    padding: 12px;
+    font-family: 'Segoe UI', FontAwesome;
+    background-color: #cbcbcb;
+    border-radius: 6px;
+    border: 1px solid #cbcbcb;
+}
+
+.input-password {
+    width: 90%;
+    margin-top: 6px;
+    height: 12px;
+    padding: 12px;
+    font-family: 'Segoe UI', FontAwesome;
+    background-color: #cbcbcb;
+    border-radius: 6px;
+    border: 1px solid #cbcbcb;
+}
+
+#password-icon {
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.login-button {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 95%;
+    border-radius: 6px;
+    border: 3px solid black;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(141, 218, 242));
+}
+
+.login-button:hover {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+    color: white;
+    border: 3px solid white;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-forgot {
+    color: white;
+    text-shadow: 1px 2px 10px black;
+    text-align: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 4 00;
 }
