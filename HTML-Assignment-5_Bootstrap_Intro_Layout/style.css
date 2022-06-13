@@ -63,10 +63,15 @@ body {
     margin-bottom: 10px;
 }
 
+.nav-link {
+    font-weight: 600;
+}
+
 .text-over-image {
-    position: absolute;
-    width: 100%;
+    background-image: url(./assets/images/1080p-Full-HD-Images.jpg);
+    background-size: cover;
+    width: auto;
+    height: 100vh;
     color: white;
     text-shadow: 2px 2px 2px black;
-    margin-top: 150px;
 }
