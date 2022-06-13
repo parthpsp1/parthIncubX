@@ -157,7 +157,7 @@ a {
 .statustext {
     margin: 20px;
     padding: 10px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(129, 124, 124);
     border-radius: 6px;
     font-size: 1rem;
 }
@@ -216,7 +216,7 @@ a {
 .carddiv {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px;
     flex-wrap: wrap;
 }
