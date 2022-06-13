@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#website-logo {
+    height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+#navbar {
+    background-color: white;
+}
+
+.container-buttons {
+    margin-top: 20px;
+}
+
+#primary-button {
+    float: right;
+}
+
+.container-fluid {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#website-footer-logo {
+    height: 150px;
+    width: auto;
+}
+
+.social-media-links-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.social-media-links {
+    list-style-type: none;
+    text-decoration: underline;
+    font-weight: 400;
+    padding: 1px;
+    cursor: pointer;
+}
+
+#address-div {
+    margin-top: 10px;
+}
+
+.social-media-icon {
+    cursor: pointer;
+    height: 28px;
+    width: auto;
+    float: right;
+}
+
+#social-media {
+    margin-bottom: 10px;
+}
+
+.text-over-image {
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 150px;
+}
