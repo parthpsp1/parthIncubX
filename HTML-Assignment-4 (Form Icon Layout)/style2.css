@@ -1,10 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, FontAwesome;
 }
 
+#settings-icon{
+    height: 10px;
+    margin-right: 6px;
+}
 
+.asterisk{
+    color: red;
+}
 
 .header {
     display: flex;
@@ -74,4 +81,213 @@ body {
 
 #dropdown-icon {
     margin-left: 6px;
+}
+
+.breadcrumbs{
+    margin-left: 50px;
+}
+.divider-line{
+    width: 90%;
+    height: 3px;
+    background-color: gray;
+    border-radius: 3px;
+}
+.container{
+    display: flex;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 20vw;
+    margin: 10px;
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+
+.list-header{
+    font-weight: bold;
+    margin-bottom:20px;
+    font-size: 0.8rem;
+}
+
+.list-points{
+    list-style-type: none;
+}
+
+.list-points{
+    margin-bottom: 20px;
+}
+
+.form{
+    margin: 20px;
+    width: 70vw;
+}
+
+.radio-input:checked {
+    color: green;
+    background-color: green;
+}
+
+.divider-form{
+    opacity: 20%;
+    width: 100%;
+    margin-top: 22px;
+}
+
+.label-text{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.client-name-field{
+    display: flex;
+    justify-content:  space-between;
+}
+
+.client-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.text-input{
+    margin-top: 4px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid rgb(199, 198, 198);
+    background-color: rgb(226, 226, 226);
+    padding-left: 10px;
+}
+
+.client-input-id{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+}
+
+.client-set-code-div{
+    background-color: rgba(240, 240, 240, 0.849);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 68vw;
+}
+
+.client-set-code{
+    display: flex;
+    flex-direction: column;
+    width: 56vw;
+}
+
+#select-client-code{
+    background-color: white;
+}
+
+.client-set-manage-code{
+    width: auto;
+}
+
+.manage-code-button{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    width: 10vw;
+    background-color: white;
+}
+
+.client-address-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input-address{
+    margin-top: 4px;
+    width: 69vw;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid rgb(199, 198, 198);
+    background-color: rgb(226, 226, 226);
+    padding-left: 10px;
+}
+
+#text-input-address-field{
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.client-address-postal-field{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.address-country-code-div{
+    margin-top: 20px;
+    background-color: rgba(240, 240, 240, 0.849);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 68vw;
+}
+
+.client-address-time-zone-field{
+    margin-top: 20px;
+}
+
+#text-style-label{
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.pre-set-colors-div{
+    display: flex;
+    align-items: center;
+}
+
+.preset-colors{
+    border: none;
+    height: 32px;
+    width: 32px;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.text-area{
+    margin-top: 4px;
+    width: 50vw;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid rgb(199, 198, 198);
+    background-color: rgb(226, 226, 226);
+    padding-left: 10px;
+    display: none;
+}
+.process-buttons{
+    float: right;
+}
+#clear-page-button{
+    background-color: white;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#next-page-button{
+    padding: 20px;
+    color: rgb(5, 51, 104);
+    background-color: rgb(86, 179, 86);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
 }
