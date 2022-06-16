@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Information</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+<body>
+    <header class="header">
+        <div class="logo-and-nav">
+            <img id="website-logo" src="assets/images/icons8-adobe-logo.svg" alt="Website Logo"></img>
+            <nav class="navbar">
+                <li class="nav-list">Accounts</li>
+                <li class="nav-list">Clients</li>
+                <li class="nav-list">Documents</li>
+                <li class="nav-list">Reports</li>
+                <li class="nav-list-dropdown">Accounting<i id="dropdown-icon" class="fa fa-caret-down" aria-hidden="true"></i></li>
+                <li class="nav-list-dropdown">Definitions<i id="dropdown-icon" class="fa fa-caret-down" aria-hidden="true"></i></li>
+            </nav>
+        </div>
+        <div class="help-and-profile">
+            <div class="help-icons-section">
+                <img class="help-icons" src="/assets/images/icons8-plus-sign-66.png" alt="Plus Sign"></img>
+                <img class="help-icons" src="/assets//images/icons8-question-mark-64.png" alt=""></img>    
+            </div>
+            <div class="profile-section">
+                <div>
+                    <img class="profile-icon" src="assets/images/icons8-male-user-64.png" alt="Profile Icon"></img>
+                </div>
+                <div>
+                    <i id="dropdown-icon"class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbs">
+        <h5><a href="#">Clients</a> / Add New Client</h5>
+        <h1>Add New Clients</h1>
+    </div>
+    <hr class="divider-line">
+    <div class="container">
+        <div class="sidebar">
+            <span class="list-header">Contact</span>
+            <section class="list-points">
+                <li>Client Information</li>
+                <li>Main Point of Contact</li>
+            </section>
+            <span class="list-header">Settings</span>
+            <section class="list-points">
+                <li>Accounting Configuration</li>
+                <li>Bank Accounts</li>
+                <li>Costs & Fees</li>
+                <li>Invocies</li>
+                <li>PIF Options</li>
+                <li>Filing & Judgment Automation</li>
+                <li>Non-Contigent Client Fees</li>
+            </section>
+        </div>
+        <div class="form">
+            <h2>Client Information</h2>
+            <p>Indicate if the client is a buisness or individual.</p>
+                <input class="radio-input" type="radio" value="Buisness" name="radio-buisness">Buisness</input>
+                <input class="radio-input" type="radio" value="Individual" name="radio-buisness">Individual</input>
+            <hr class="divider-form">
+            <p>Enter the client's name.</p>
+            <div class="client-name-field">
+                <div class="client-input">
+                    <label class="label-text">Client Name<span class="asterisk">*</span></label>
+                    <input class="text-input" type="text" placeholder="Enter Client's Name"></input>
+                </div>
+                <div class="client-input">
+                    <label class="label-text">Doing Buisness As</label>
+                    <input class="text-input" type="text" placeholder="Enter DBA or fictitious name"></input>
+                </div>
+            </div>
+            <hr class="divider-form">
+            <p>Create a client ID, enter their FEIN, and select client type.</p>
+            <div class="client-name-field">
+                <div class="client-input-id">
+                    <label class="label-text">Client ID (Limit of 10 Characters) <span class="asterisk">*</span></label>
+                    <input class="text-input" type="text" placeholder="Enter Client ID "></input>
+                </div>
+                <div class="client-input-id">
+                    <label class="label-text">FEIN</label>
+                    <input class="text-input" type="text" placeholder="Enter FEIN"></input>
+                </div>
+                <div class="client-input-id">
+                    <label class="label-text">Client Type<span class="asterisk">*</span></label>
+                    <input class="text-input" type="text" placeholder="Select Type"></input>
+                </div>
+            </div>
+            <hr class="divider-form">
+            <p>Assign to 1 or more sets. Use sets to group like clients together and pull reports for all clients in the set. (optional)</p>
+            <div class="client-set-code-div">
+                <div class="client-set-code">
+                    <label class="label-text">Client Set Code</label>
+                    <input id="select-client-code" class="text-input" type="text" placeholder="Select client set code"></input>
+                </div>
+                <div class="client-set-manage-code">
+                    <button class="manage-code-button"><i id="settings-icon" class="fa fa-cog" aria-hidden="true"></i>Manage Codes</button>
+                </div>
+            </div>
+            <hr class="divider-form">
+            <p>Enter address (optional). More address can be saved as additional contacts.</p>
+            <div class="client-address-field">
+                <div class="client-input">
+                    <label class="label-text">Address</label>
+                    <input class="text-input-address" type="text" placeholder="Enter Street Address"></input>
+                </div>
+                <div class="client-input">
+                    <label id="text-input-address-field">Street Address</label>
+                    <input class="text-input-address" type="text" placeholder="Enter apartment, suite, unit, floor, building, etc."></input>
+                </div>
+            </div>
+            <div class="client-address-postal-field">
+                <div class="client-input">
+                    <label class="label-text">Zip Code/Postal Code</label>
+                    <input class="text-input" type="text" placeholder="00000"></input>
+                </div>
+                <div class="client-input">
+                    <label class="label-text">City</label>
+                    <input class="text-input" type="text" placeholder="Enter City"></input>
+                </div>
+            </div>
+            <div class="client-address-postal-field">
+                <div class="client-input">
+                    <label class="label-text">State/Province</label>
+                    <input class="text-input" type="text" placeholder="Enter State/Province"></input>
+                </div>
+                <div class="client-input">
+                    <label class="label-text">Country</label>
+                    <input class="text-input" type="text" placeholder="Select Country"></input>
+                </div>
+            </div>
+            <div class="address-country-code-div">
+                <div class="client-set-code">
+                    <label class="label-text">Client Set Code</label>
+                    <input id="select-client-code" class="text-input" type="text" placeholder="Select client set code"></input>
+                </div>
+                <div class="client-set-manage-code">
+                    <button class="manage-code-button"><i id="settings-icon" class="fa fa-cog" aria-hidden="true"></i>Manage Codes</button>
+                </div>
+            </div>
+            <div class="client-address-time-zone-field">
+                <div class="client-input">
+                    <label class="label-text">Time Zone</label>
+                    <input class="text-input-address" type="text" placeholder="Select Time Zone"></input>
+                </div>
+            </div>
+            <hr class="divider-form">
+            <p>Enter a website link (optional)</p>
+            <div class="client-input">
+                <label class="label-text">Website Input</label>
+                <input class="text-input-address" type="text" placeholder="Enter URL"></input>
+            </div>
+            <hr class="divider-form">
+            <p>Choose a pre-set color (optional)</p>
+            <p id="text-style-label">Assigning colors to your clients can help to</p>
+            <div class="address-country-code-div">
+                <div class="client-set-code ">
+                    <label class="label-text">Pre-set Colors</label>
+                    <div class="pre-set-colors-div">
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#1e90ff">
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#87ceeb">  
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#008000"> 
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#ffa500">
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#ff4500">  
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#ffb6c1">
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#663399">
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#9370db">  
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#708090">
+                        <input class="preset-colors" type="color" id="pre-set-colors" name="favcolor" value="#cccccc">
+                    </div>
+                </div>
+            </div>
+            <hr class="divider-form">
+            <p>Enter notes (optional)</p>
+            <textarea id="text-area" name="text-area" rows="8" cols="80"  wrap="hard"></textarea>
+            <hr class="divider-form">
+            <p>Enter additional information by creating your own fields for client accounts (optional)</p>
+            <div class="client-input">
+                <label class="label-text">Custom User Field</label>
+                <input class="text-input-address" type="text"></input>
+            </div>
+            <hr class="divider-form">
+            <div class="process-buttons">
+                <input id="clear-page-button" type="reset" name="Clear Page" value="Clear Page"></input>
+                <input id="next-page-button" type="submit" name="Submit" value="Next"></input>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

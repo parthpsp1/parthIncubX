@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JS Records Form</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./style.css">
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div id="main-row" class="row">
+            <div class="records col-lg-7">
+               <table id="displayTable" class="table table-striped"">
+                  <thead>
+                     <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">State</th>
+                        <th scope="col">City</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                    <tr></tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="form col-lg-5">
+               <form>
+                  <div class="mb-3">
+                     <label class="form-label">First Name</label>
+                     <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your First Name" onkeypress="checkCharFN()" onselect="checkCharFN()">
+                     <span id="firstnamecheck"></span>
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Last Name</label>
+                     <input type="text" class="form-control" id="inputLastName" placeholder="Enter your Last Name" onkeypress="checkCharLN()">
+                     <span id="lastnamecheck"></span>
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Email Address</label>
+                     <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" onkeypress="emailvalidation()" onchange="emailvalidation()">
+                     <span id="emailcheck"></span>
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">Age</label>
+                     <input type="text" class="form-control" id="inputAge" placeholder="Enter your age (18-99)" onkeydown="checkNumber()" onkeypress="checkNumber()">
+                     <span id="ageerror"></span>
+                  </div>
+                  <label>Select Country</label>
+                  <select class="form-select" id="countySel" onclick="dropdownCountry()" onkeypress="dropdownCountry()">
+                    <option value="default" selected="selected">-- Select Country --</option>
+                    <option value="India">India</option>
+                    <option value="UK">UK</option>
+                  </select>
+                  <span id="country-error"></span>
+                  <br>
+                  <label>Select State</label>
+                  <select class="form-select" id="stateSel" onclick="dropdownState()" onkeypress="dropdownCountry()">
+                    <option value="blank">-- Select State--</option>
+                  </select>  
+                  <span id="state-error"></span>
+                  <br>
+                  <label>Select City</label>
+                  <select class="form-select" id="citySel">
+                     <option value="blank">-- Select City--</option>
+                  </select>
+                  <span id="city-error"></span>
+                  <br><br> 
+                  <!-- <button id="deleteRowButton" type="button" class="btn btn-danger" onclick="deleteData()">Delete Row</button> -->
+                  <button onClick="window.location.href=window.location.href" type="button" class="btn btn-warning">Refresh Page</button>
+                  <button id="resetButton" type="reset" class="btn btn-danger">Reset Form</button>
+                  <button id="addButton" type="button" class="btn btn-success" onclick="getDetails()">Add</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script src="./script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Dashboard Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-icon">
+            <img class="logoimage" src="/assets/images/drink.png" alt="Website Logo"></img>
+            <img class="hamburgermenuicon" src="/assets/images/menu.png" alt="Website Hamberger Menu"></img>
+        </div>
+        <div class="admin-control">
+            <div>
+                <img class="admin-control-icon" src="/assets/images/engineer.png" alt=""></img>
+            </div>
+            <div class="admin-control-text-icon">
+                <h3 class="admin-control-text">Admin</h3>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i></img>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+                <li class="navlist-selected">
+                    <img class="navicons" src="/assets/images/dashboard.png" alt="" clas>Dashboard</img>
+                </li>
+                <li class="navlist">
+                    <img class="navicons" src="/assets/images/minus-horizontal-straight-line.png" alt="">Menu 1</img>
+                </li>
+                <li class="navlist">
+                    <img class="navicons" src="/assets/images/minus-horizontal-straight-line.png" alt="">Menu 2</img>
+                </li>            
+                <li class="navlist">
+                    <img class="navicons" src="/assets/images/minus-horizontal-straight-line.png" alt="">Menu 3</img>
+                </li>
+        </div>
+        <div class="contentmenu">
+            <div class="dashboard-menu">
+                <div>
+                    <h1 class="heading">Dashboard</h1>
+                    <h4 class="subheading">Home</h4>
+                </div>
+                <div class="dashboard-profile-icons-div">
+                    <img class="dashboard-profile-icons" src="assets/images/icons8-person-96.png" alt=""></img>
+                    <img class="dashboard-profile-icons" src="assets/images/icons8-person-96.png" alt=""></img>
+                    <img class="dashboard-profile-icons" src="assets/images/icons8-person-96.png" alt=""></img>
+                    <img class="dashboard-profile-icons" src="assets/images/icons8-person-96.png" alt=""></img>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="status">
+                <h3 class="statustext-selected">In Progress</h3>
+                <h3 class="statustext">Completed</h3>
+                <h3 class="statustext">All</h3>
+            </div>
+            <div class="filters">
+                <a href="#"><button class="filterbutton">Type<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="filterbutton">Classification<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="filterbutton">Progress<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="filterbutton">Days Since Notified<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="filterbutton">Category<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="filterbutton">Status<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="filterbutton">Medium of Recall<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="clearfilterbutton">Clear All Filters<i class="fa fa-ban" aria-hidden="true"></i></button></a>
+                <a href="#"><button class="filter-button-sort">Sort By<i class="fa fa-chevron-down" aria-hidden="true"></i></button></a>
+            </div>
+            <div class="carddiv">
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="cardcontenttop">
+                            <img class="cardtopicon" src="/assets/images/email.png" alt=""></img>
+                            <div class="cardtopstatusdiv">
+                                <button class="card-top-status-button-acknowledged">ACKNOWLEDGED</button>
+                                <button class="card-top-status-button-urgent">URGENT</button>
+                            </div>
+                        </div>
+                        <div class="card-content-main-text">
+                            <small class="card-content-date">06/06/2022</small>
+                            <h2 class="card-content-title">SUP_TEST</h2>
+                            <p class="card-content-subtitle">qa12345</p>
+                            <p class="recall-id-text"><span class="recall-id">Recall ID</span> - Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-content-progress">
+                            <div class="card-content-progress-icon-div">
+                                <img src="/assets/images/icons8-in-progress-50.png" alt=""></img>
+                                <h5 class="card-content-progress-text">Progress</h5>
+                            </div>
+                            <div class="card-content-progress-notification">
+                                <h3 class="card-content-progress-notificaion-title">2</h3>
+                                <small class="card-content-progress-notification-date">06/06/2022</small>
+                                <h3 class="card-content-progress-notification-text">Lorem ipsum</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-site-category">
+                            <li class="category-list">Sites - 1</li>
+                            <li class="category-list">Category - <span class="category-name"><a href="#">Blood Prodcuts</a></span></li>
+                        </div>
+                        <div class="card-content-action">
+                            <div class="card-content-action-set-1"><i class="fa fa-code" aria-hidden="true"></i>Not Yet Classified</div>
+                            <div class="card-content-action-set-2"></div>
+                            <div class="card-content-action-set-3"><i class="fa fa-code" aria-hidden="true"></i>Removal</div>
+                        </div>
+                        <div class="card-content-view-button-div">
+                            <a href="#"><button class="card-content-view-button">VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 1 Completed-->
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="cardcontenttop">
+                            <img class="cardtopicon" src="/assets/images/email.png" alt=""></img>
+                            <div class="cardtopstatusdiv">
+                                <button class="card-top-status-button-urgent">URGENT</button>
+                            </div>
+                        </div>
+                        <div class="card-content-main-text">
+                            <small class="card-content-date">06/06/2022</small>
+                            <h2 class="card-content-title">SUP_TEST</h2>
+                            <p class="card-content-subtitle">qa12345</p>
+                            <p class="recall-id-text"><span class="recall-id">Recall ID</span> - Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-content-progress">
+                            <div class="card-content-progress-icon-div">
+                                <img src="/assets/images/icons8-in-progress-50.png" alt=""></img>
+                                <h5 class="card-content-progress-text">Progress</h5>
+                            </div>
+                            <div class="card-content-progress-notification">
+                                <h3 class="card-content-progress-notificaion-title">2</h3>
+                                <small class="card-content-progress-notification-date">06/06/2022</small>
+                                <h3 class="card-content-progress-notification-text">Lorem ipsum</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-site-category">
+                            <li class="category-list">Sites - 1</li>
+                            <li class="category-list">Category - <span class="category-name"><a href="#">Blood Prodcuts</a></span></li>
+                        </div>
+                        <div class="card-content-action">
+                            <div class="card-content-action-set-1"><i class="fa fa-code" aria-hidden="true"></i>Not Yet Classified</div>
+                            <div class="card-content-action-set-2"></div>
+                            <div class="card-content-action-set-3"><i class="fa fa-code" aria-hidden="true"></i>Removal</div>
+                        </div>
+                        <div class="card-content-view-button-div">
+                            <a href="#"><button class="card-content-view-button">VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2 Completed-->
+                <div class="card">
+                    <div class="cardcontent">
+                        <div class="cardcontenttop">
+                            <img class="cardtopicon" src="/assets/images/email.png" alt=""></img>
+                            <div class="cardtopstatusdiv">
+                                <button class="card-top-status-button-acknowledged">ACKNOWLEDGED</button>
+                                <button class="card-top-status-button-urgent">URGENT</button>
+                            </div>
+                        </div>
+                        <div class="card-content-main-text">
+                            <small class="card-content-date">06/06/2022</small>
+                            <h2 class="card-content-title">SUP_TEST</h2>
+                            <p class="card-content-subtitle">qa12345</p>
+                            <p class="recall-id-text"><span class="recall-id">Recall ID</span> - Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-content-progress">
+                            <div class="card-content-progress-icon-div">
+                                <img src="/assets/images/icons8-in-progress-50.png" alt=""></img>
+                                <h5 class="card-content-progress-text">Progress</h5>
+                            </div>
+                            <div class="card-content-progress-notification">
+                                <h3 class="card-content-progress-notificaion-title">2</h3>
+                                <small class="card-content-progress-notification-date">06/06/2022</small>
+                                <h3 class="card-content-progress-notification-text">Lorem ipsum</h3>
+                            </div>
+                        </div>
+                        <div class="card-content-site-category">
+                            <li class="category-list">Sites - 1</li>
+                            <li class="category-list">Category - <span class="category-name"><a href="#">Blood Prodcuts</a></span></li>
+                        </div>
+                        <div class="card-content-action">
+                            <div class="card-content-action-set-1"><i class="fa fa-code" aria-hidden="true"></i>Not Yet Classified</div>
+                            <div class="card-content-action-set-2"></div>
+                            <div class="card-content-action-set-3"><i class="fa fa-code" aria-hidden="true"></i>Removal</div>
+                        </div>
+                        <div class="card-content-view-button-div">
+                            <a href="#"><button class="card-content-view-button">VIEW</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3 completed-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
